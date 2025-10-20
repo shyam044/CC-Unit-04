@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CC Unit-04 - Questions</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      page-break-after: always;
+    }
+
+    h2 {
+      color: #0077cc;
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      color: #444;
+      margin-top: 0.8rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    ul {
+      margin: 0.3rem 0 1rem 1rem;
+      padding-left: 1rem;
+    }
+
+    li>ul {
+      margin-top: 0.3rem;
+      margin-bottom: 0.6rem;
+      padding-left: 0.7rem;
+    }
+
+    li>ul>li {
+      margin-bottom: 0.4rem;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 0.95rem;
+      }
+
+      header {
+        font-size: 1.3rem;
+        padding: 0.8rem 0.5rem;
+      }
+
+      .container {
+        padding: 0.9rem;
+        margin: 1.5rem auto;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        margin-top: 1.8rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        margin-top: 0.7rem;
+      }
+
+      ul {
+        margin-left: 0.5rem;
+        padding-left: 0.7rem;
+      }
+
+      li>ul {
+        margin-top: 0.2rem;
+        margin-bottom: 0.4rem;
+        padding-left: 0.5rem;
+      }
+
+      li>ul>li {
+        margin-bottom: 0.3rem;
+      }
+
+      ul li {
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+      }
+    }
+
+    @media print {
+      .container {
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    CC Unit-04
+  </header>
+
+  <div class="container">
+    <h2>1) Cloud Resource Allocation and Scaling</h2>
+
+    <p>Cloud providers handle Cloud Resource Allocation and Scaling through a combination of <strong>Policies</strong>, <strong>Mechanisms</strong>, <strong>Scaling</strong>, and <strong>Scheduling</strong>.</p>
+
+    <h3>Policies:</h3>
+    <ul>
+      <li><strong>Resource Check:</strong>
+        <ul>
+          <li>The system checks if enough resources are available before starting a task.</li>
+          <li>If resources are available, the task is accepted; otherwise, it is rejected.</li>
+        </ul>
+      </li>
+      <li><strong>Resource Allocation:</strong>
+        <ul>
+          <li>Distributes workloads across multiple servers to prevent overloading.</li>
+          <li>Improves performance and avoids bottlenecks.</li>
+        </ul>
+      </li>
+      <li><strong>Load Balancing:</strong>
+        <ul>
+          <li>Load Balancing Algoirhtm is a technique for Distributing the workloads across multiple servers.</li>
+          <li>Types of Load Balancing Algorithms:
+            <ul>
+              <li>Static Load Balancing Algorithm</li>
+              <li>Dynamic Load Balancing Algorithm</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Power Saving:</strong>
+        <ul>
+          <li>Runs tasks on fewer servers to save power.</li>
+          <li>Puts idle servers in sleep mode.</li>
+          <li>Reduces power consumption and cost.</li>
+        </ul>
+      </li>
+      <li><strong>QoS:</strong>
+        <ul>
+          <li>QoS stands for Quality of Service</li>
+          <li>key metrics include:
+            <ul>
+              <li><strong>Throughput:</strong>No. of Tasks completed per second</li>
+              <li><strong>Latency:</strong>Time Delay between request and response</li>
+              <li><strong>Response Time:</strong> Time taken to respond to a request</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Mechanisms:</h3>
+    <ul>
+      <li><strong>Control Theory:</strong> 
+        <ul>
+          <li>Monitors system performance continuously.</li>
+          <li>Uses feedback to adjust resources automatically.</li>
+        </ul>
+      </li>
+      <li><strong>Machine Learning:</strong>
+        <ul>
+          <li>Predicts workload changes using past data.</li>
+          <li>Automatically adjusts resources as needed.</li>
+        </ul>
+      </li>
+      <li><strong>Performance vs Cost:</strong>
+        <ul>
+          <li>Resources are allocated to maximize performance with minimal cost.</li>
+        </ul>
+      </li>
+      <li><strong>Market-Based Allocation:</strong>
+        <ul>
+          <li>Uses pricing or auctions to distribute resources.</li>
+          <li>Users "buy" resources as per their needs.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Scaling:</h3>
+    <ul>
+      <li><strong>Scalability:</strong>
+        <ul>
+          <li>The ability of a computing system to handle the workloads by adjusting its performance and costs is called Scalability.</li>
+          <li>Instead of upgrading the entire system, Cloud System allows you to add more servers to increase scalability.</li>
+        </ul>
+      </li>
+      <li><strong>Dynamic Scaling:</strong>
+        <ul>
+          <li><strong>Scale Up:</strong> Add resources when CPU usage is high.</li>
+          <li><strong>Scale Down:</strong> Remove resources when CPU usage is low.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Scheduling:</h3>
+    <ul>
+      <li>Resources like CPU time and bandwidth are shared among virtual machines using scheduling algorithms.</li>
+      <li><strong>Common Algorithms:</strong>
+        <ul>
+          <li>Round Robin Algorithm</li>
+          <li>Shortest Job First Algorithm</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+    <header>
+    CC Unit-04
+  </header>
+    <div class="container">
+    <h2>2) Control Theory</h2>
+    <img src="control theory03.jpg"/>
+
+    <h3>Algorithms used in Control Theory:</h3>
+    <ul>
+      <li><strong>Feedback Control Algorithm:</strong>
+        <ul>
+          <li>Continuously monitors the system performance.</li>
+          <li>Uses feedback to automatically adjust the resources.</li>
+        </ul>
+      </li>
+      <li><strong>PID Control:</strong>
+        <ul>
+          <li>PID stands for Proportional-Integral-Derivative.</li>
+          <li>The PID controller adjusts the system input based on the error value.</li>
+        </ul>
+      </li>
+      <li><strong>Dynamic Threshold:</strong>
+        <ul>
+          <li><strong>Scale Up:</strong> Add resources when CPU usage is too high.</li>
+          <li><strong>Scale Down:</strong> Remove resources when CPU usage is too low.</li>
+        </ul>
+      </li>
+      <li><strong>Two-Level Control Architecture:</strong>
+        <ul>
+          <li>It uses two controllers:
+            <ul>
+              <li>Application-level controller</li>
+              <li>Cloud-level controller</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Control Theory Provides:</h3>
+    <ul>
+      <li>Scalability</li>
+      <li>Reliability</li>
+      <li>Performance</li>
+      <li>Responsiveness</li>
+    </ul>
+  </div>
+    <header>
+    CC Unit-04
+  </header>
+
+  <div class="container">
+    <h2>3) Two-Level Resource Allocation Architecture</h2>
+    <img src="Two-level-control-architecture.png"/>
+    <ul>
+      <li><strong>It uses two controllers:</strong>
+        <ul>
+          <li>Application-level controller</li>
+          <li>Cloud-level controller</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Application-level Controller:</h3>
+    <ul>
+      <li>It manages Local Resources.</li>
+      <li>It allocates the resources based on the demand.</li>
+    </ul>
+
+    <h3>Cloud-level Controller:</h3>
+    <ul>
+      <li>It manages Global Resources.</li>
+      <li>It allocates the resources based on the app request.</li>
+    </ul>
+
+    <h3>Stability in a Two-Level Resource Allocation Architecture:</h3>
+    <ul>
+      <li>Stability depends upon the coordination between the Application-Level Controller and Cloud-Level Controller.</li>
+    </ul>
+
+    <h3>Feedback Mechanism:</h3>
+    <ul>
+      <li>Continuously monitors the system performance.</li>
+      <li>Uses feedback to automatically adjust the resources.</li>
+    </ul>
+
+    <h3>Dynamic Threshold:</h3>
+    <ul>
+      <li><strong>Scale Up:</strong> Add resources when CPU usage is too high.</li>
+      <li><strong>Scale Down:</strong> Remove resources when CPU usage is too low.</li>
+    </ul>
+  </div>
+    <header>
+    CC Unit-04
+  </header>
+
+  <div class="container">
+    <h2>4) Start Time Fair Queuing Scheduling Algorithm</h2>
+
+    <ul>
+      <li>It is a hierarchical CPU scheduling algorithm used in cloud computing.</li>
+      <li>It fairly shares CPU time across different virtual machines.</li>
+      <li>It mainly consists of three types of nodes:
+        <ul>
+          <li><strong>Root Node:</strong> Processor (CPU)</li>
+          <li><strong>Intermediate Node:</strong> Applications and Virtual Machines</li>
+          <li><strong>Leaf Node:</strong> Threads</li>
+        </ul>
+      </li>
+      <img src="Screenshot 2025-10-20 013309.png"/>
+    </ul>
+
+    <h3>Virtual Machines:</h3>
+    <ul>
+      <li>VM1</li>
+      <li>VM2</li>
+    </ul>
+
+    <h3>Applications:</h3>
+    <ul>
+      <li>A1</li>
+      <li>A2</li>
+      <li>A3</li>
+    </ul>
+
+    <h3>Example:</h3>
+    <ul>
+      <li>If VM1 is idle, its CPU bandwidth is automatically distributed to VM2.</li>
+      <li>Within VM2, if one of its threads becomes idle, its CPU bandwidth is automatically distributed to other threads.</li>
+    </ul>
+  </div>
+    <header>
+    CC Unit-04
+  </header>
+
+  <div class="container">
+    <h2>5) Application Performance Managers (APM)</h2>
+
+    <ul>
+      <li>APM stands for Application Performance Managers.</li>
+      <li>Different APMs handle different resources such as CPU, Memory, Bandwidth, etc.</li>
+      <li>Several mechanisms are used for coordination between different APMs.</li>
+    </ul>
+
+    <h3>Mechanisms:</h3>
+
+    <h4>i) Hierarchical Coordination:</h4>
+    <ul>
+      <li>APMs are organized in a hierarchical structure.</li>
+      <li>Low-Level APMs manage subsystems like CPU, Memory, Bandwidth, etc.</li>
+      <li>High-Level APMs manage the overall system.</li>
+      <li>Coordination happens through:
+        <ul>
+          <li><strong>Top-Down:</strong> Higher levels send policies to lower levels.</li>
+          <li><strong>Bottom-Up:</strong> Lower levels send feedback to higher levels.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>ii) Message Passing Protocol:</h4>
+    <ul>
+      <img src="message_passing_in_distributed_system.webp"/>
+      <li>Message passing protocol is used to share information.</li>
+      <li>Common protocols include:
+        <ul>
+          <li>SOAP</li>
+          <li>REST</li>
+          <li>XML-Based messaging protocol</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>iii) Publish–Subscribe Mechanism:</h4>
+    <ul>
+      <li>This mechanism is based on an event-driven model.</li>
+      <li>Managers subscribe to the events.</li>
+      <li>When a manager detects a change, they publish an update.</li>
+      <li>Other managers can react to the update.</li>
+    </ul>
+
+    <h4>iv) Middleware Layer:</h4>
+    <ul>
+      <li>The middleware layer acts as an interface for communication between APMs.</li>
+      <li>Communication between APMs happens using APIs or service buses.</li>
+      <li>Middleware acts as a bridge to connect different types of managers.</li>
+    </ul>
+  </div>
+
+
+</body>
+
+</html>
