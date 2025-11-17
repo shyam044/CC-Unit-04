@@ -465,58 +465,25 @@
     CC Unit-04
   </header>
 
-  <div class="container">
-    <h2>5) Application Performance Managers (APM)</h2>
+ <div class="container">
+    <h2>5)Autonomic Performance Managers</h2>
 
     <ul>
-      <li>APM stands for Application Performance Managers.</li>
-      <li>Different APMs handle different resources such as CPU, Memory, Bandwidth, etc.</li>
-      <li>Several mechanisms are used for coordination between different APMs.</li>
+        <li>In Cloud Computing, <strong>Autonomic Performance Managers</strong> coordinate to handle resources such as CPU, Memory, Storage, and Energy efficiently.</li>
+        <li>Managers continuously monitor system performance and automatically adjust the resources.</li>
+        <li>Managers work together to improve performance and energy efficiency.</li>
     </ul>
 
-    <h3>Mechanisms:</h3>
-
-    <h4>i) Hierarchical Coordination:</h4>
+    <h3>Example:</h3>
     <ul>
-      <li>APMs are organized in a hierarchical structure.</li>
-      <li>Low-Level APMs manage subsystems like CPU, Memory, Bandwidth, etc.</li>
-      <li>High-Level APMs manage the overall system.</li>
-      <li>Coordination happens through:
-        <ul>
-          <li><strong>Top-Down:</strong> Higher levels send policies to lower levels.</li>
-          <li><strong>Bottom-Up:</strong> Lower levels send feedback to higher levels.</li>
-        </ul>
-      </li>
+        <li>If CPU usage increases, <strong>DVFS</strong> adjusts the processor speed.</li>
+        <li>It maintains performance and saves energy.</li>
+        <li>There is coordination between CPU and Power, which ensures the system runs smoothly.</li>
     </ul>
 
-    <h4>ii) Message Passing Protocol:</h4>
-    <ul>
-      <img src="message_passing_in_distributed_system.webp"/>
-      <li>Message passing protocol is used to share information.</li>
-      <li>Common protocols include:
-        <ul>
-          <li>SOAP</li>
-          <li>REST</li>
-          <li>XML-Based messaging protocol</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h4>iii) Publish–Subscribe Mechanism:</h4>
-    <ul>
-      <li>This mechanism is based on an event-driven model.</li>
-      <li>Managers subscribe to the events.</li>
-      <li>When a manager detects a change, they publish an update.</li>
-      <li>Other managers can react to the update.</li>
-    </ul>
-
-    <h4>iv) Middleware Layer:</h4>
-    <ul>
-      <li>The middleware layer acts as an interface for communication between APMs.</li>
-      <li>Communication between APMs happens using APIs or service buses.</li>
-      <li>Middleware acts as a bridge to connect different types of managers.</li>
-    </ul>
-  </div>
+    <!-- Optional image placeholder -->
+    <img src="WhatsApp Image 2025-11-02 at 17.07.18_b0732590.jpg" alt="Autonomic Performance Managers Diagram" />
+</div>
 <script>
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
@@ -548,4 +515,5 @@
 </body>
 
 </html>
+
 
